@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    padding-bottom: 100px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 200px 50px;
+    height: 90vh;
+    width: 100%;
+    background: url(images/foamy-cappuccino-wood-table-generated-by-ai.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-origin: padding-box;
+    background-position: top 0% left 55%;
+}
+
+.hero h1{
+    color: rgba(255, 255, 255, 1);   
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.hero p{
+    opacity: 0.7;
+}
+
+.coffe_icon{
+    opacity: 0.7;
+}
+
+header{
+    display: block;
+    background: #9F1B32;
+    height: 80px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav{
+    min-width: 1042px;
+}
+header h1{
+    margin-left: 50px;
+    margin-right: 0px;
+    font-weight: 500;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    margin: 0px 20px;
+}
+
+header ul li{
+    padding: 20px 15px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 0.80rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+ul li a::before{
+    content: '';
+    width: 98%;
+    height: 2px;
+    background: gold;
+    margin: 10px auto;
+    position: absolute;
+    top: -120%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 500ms ease;
+    
+}
+li a:hover::before{
+    opacity: 1;
+    transition: opacity 100ms ease;
+}
+
+li a:hover{
+    color: gold;
+}
+
+#page{
+    position: relative;
+}
+
+#page::after{
+    position: absolute;
+    display: inline-block;
+    content: '';
+    box-sizing: border-box;
+    width: 12px;
+    height: 12px;
+    border: 6px solid transparent;
+    border-top-color: white;
+    top: 55%;
+    transform: translateY(-50%);
+    left: 120%;
+}
+
+#line{
+    position: absolute;
+    display: block;
+    height: 45px;
+    width: 1px;
+    background: white;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.line_li{
+    position: relative;
+    padding: 0px 20px;
+}
+
+#but_purchase{
+    padding: 7px 15px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+}
+#but_purchase:hover{
+    transform: scale(1.040);
+}
+
+.li_button{
+    padding: 13px;
+}
+
+.icon{
+    cursor: pointer;
+}
+
+.icon:hover{
+    transform: scale(1.2);
+}
+
+.but_discover{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    opacity: 0.8;
+    cursor: pointer;
+}
